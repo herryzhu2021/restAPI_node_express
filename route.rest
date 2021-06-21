@@ -1,0 +1,28 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/60ca069f82ab522ea87ae7a2
+
+###
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "Amazing ppl",
+    "subscribedToChannel": "hz channel"
+}
+
+###
+
+DELETE http://localhost:3000/subscribers/60ca06f982ab522ea87ae7a6
+
+###
+
+PATCH http://localhost:3000/subscribers/60ca069f82ab522ea87ae7a2
+Content-Type: application/json
+
+{
+    "name": "updated ppl"
+}
